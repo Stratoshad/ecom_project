@@ -12,6 +12,38 @@ tasks you do during a project.
 import pandas as pd
 
 
+def cap_col(col, q):
+    """
+    Takes in a column
+    and caps it at the 
+    given quantile
+    
+    Parameters:
+    -----------
+    
+    col : series
+    
+    A pandas series column
+    to cap
+    
+    q : float (ranging 0-1)
+    
+    The quantile to cap at
+    
+    Returns
+    -------
+    
+    col_capped : series
+    
+    The column with the capped values
+    
+    """
+
+    cap_val = col.quantile(q)
+
+    return col.apply(lambda x: cap_val if x > cap_val else x)
+
+
 def print_bold(txt):
     """
     Function that prints
