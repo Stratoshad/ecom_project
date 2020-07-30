@@ -1,10 +1,48 @@
 E-Commerce Data Exploration Project
 ==============================
 
-This is project that explores the an E-commerce transaction data.
+![alt text](notebooks/imgs/ecom_back.png "Title")
+
+This is a project that explores the E-commerce transaction data from the [UCI repository](http://archive.ics.uci.edu/ml/datasets/Online+Retail). The analysis covered followes the standard data science pipeline from data loading, data cleaning, exploratory data analysis and modeling. All work is carried out in Jupyter notebooks with the help of several helper functions that you can find under the `src` module.
+
+## Installation
+
+To use this project please clone this repo in your local machine. You will then need to create the environment. You can do so in two different ways from your main project folder:
+
+**using conda (recommended)**
+
+```
+    conda env create -f environment.yml
+```
+
+**using pip**
+
+```
+    pip install -r requirements.txt
+```
+
+Once your environment is all setup you will need to install the `src` module. To do that, activate your environment and from your project home directory execute:
+
+```
+    pip install --editable .
+```
+
+## Navigation
+
+As discussed above, all analysis is within the `notebooks` folder. However I have also uploaded the finished notebooks on nbviewer. It is recommended that you use the links below to allow for the Plotly charts to load properly. Any work in progress is marked with (WIP)
+
+1. [NB1 - Data Loading and Cleaning]()
+2. [NB2 - Exploratory Data Analysis]()
+3. [NB3 - Customer Segmentation]()
+4. NB4 - Customer Attrition Prevention (WIP)
+5. NB5 - Product Recommendation (WIP)
+
+
 
 Project Organization
 ------------
+
+This project is using [cookiecutter](https://github.com/cookiecutter/cookiecutter) as its folder structure. You can find more about this in [this article](https://medium.com/@rrfd/cookiecutter-data-science-organize-your-projects-atom-and-jupyter-2be7862f487e).
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
