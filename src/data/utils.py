@@ -12,6 +12,47 @@ tasks you do during a project.
 import pandas as pd
 
 
+def rearrange_and_rename(df, col_order, rename_dict=None):
+    """
+    Takes in a dataframe, a column
+    order and optionally a rename
+    dictionary. It rearranges the 
+    column order by putting the ones
+    defined in "col_order" first. It
+    retains the order of the remaining 
+    ones.
+    
+    Parameters:
+    -----------
+    
+    df : dataframe
+    
+    Dataframe to rearrange
+    
+    col_order : list
+    
+    List of the columns to go at
+    the beginning of the dataframe
+    
+    rename_dict : dictionary
+    
+    Dictionary
+    """
+
+    df_out = df.copy()
+
+    # Rearrange the columns based on
+    # the order provided
+    other_cols = [col for col in df_out.columns if col not in col_order]
+    df_out = df_out[col_order + other_cols]
+
+    if rename_dict is not None:
+        # Rename using the rename dictionary
+        df_out = df_out.rename(columns=rename_dict)
+
+    return df_out
+
+
 def cap_col(col, q):
     """
     Takes in a column
