@@ -31,9 +31,9 @@ Once your environment is all setup you will need to install the `src` module. To
 
 As discussed above, all analysis is within the `notebooks` folder. However I have also uploaded the finished notebooks on nbviewer. It is recommended that you use the links below to allow for the Plotly charts to load properly. Any work in progress is marked with (WIP)
 
-1. [NB1 - Data Loading and Cleaning]()
-2. [NB2 - Exploratory Data Analysis]()
-3. [NB3 - Customer Segmentation]()
+1. [NB1 - Data Loading and Cleaning](https://nbviewer.jupyter.org/github/Stratoshad/ecom_project/blob/master/notebooks/NB1%20-%20Data%20Loading%20%26%20Data%20Cleaning.ipynb)
+2. [NB2 - Exploratory Data Analysis](https://nbviewer.jupyter.org/github/Stratoshad/ecom_project/blob/master/notebooks/NB2%20-%20Exploratory%20Data%20Analysis%20%28EDA%29.ipynb)
+3. [NB3 - Customer Segmentation](https://nbviewer.jupyter.org/github/Stratoshad/ecom_project/blob/master/notebooks/NB3%20-%20Customer%20Segmentation.ipynb)
 4. NB4 - Customer Attrition Prevention (WIP)
 5. NB5 - Product Recommendation (WIP)
 
